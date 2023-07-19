@@ -37,6 +37,7 @@ export interface OptionBoolSchemaItem extends OptionBaseSchemaItem {
 export type OptionSchemaItem = OptionNumSchemaItem | OptionBoolSchemaItem;
 
 export interface OptionsType {
+    title: string;
     output: string;
     nativeBefore?: string;
     nativeAfter?: string;

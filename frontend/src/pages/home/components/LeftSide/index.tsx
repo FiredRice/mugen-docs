@@ -4,7 +4,7 @@ import { useRefContext, useWatch } from '../../hooks/context';
 import docs from 'src/service/docs';
 import { ItemType, MenuItemType } from 'antd/es/menu/hooks/useItems';
 import { useHistory, useRouteMatch } from 'react-router-dom';
-import { otherMenus } from './hooks';
+import optionService from 'src/service/optionService';
 import './style/index.less';
 
 const LeftSide = () => {
@@ -23,6 +23,11 @@ const LeftSide = () => {
         }));
         return list;
     }, []);
+
+    const otherMenus: ItemType<MenuItemType>[] = useMemo(() => [{
+        key: 'setting',
+        label: optionService.getValue().title,
+    }], []);
 
     const onMenuClick = ({ key }) => {
         if (key === current) return;

@@ -34,7 +34,7 @@ const Setting = () => {
 
     return (
         <Card
-            title='开关设置'
+            title={optionService.getValue().title}
             className='setting-card'
         >
             <Form

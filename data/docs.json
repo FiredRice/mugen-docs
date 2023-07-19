@@ -2,5 +2,9 @@
 	{
 		"label": "测试",
 		"path": "./docs/test.md"
+	},
+	{
+		"label": "测试2",
+		"path": "./docs/test2.md"
 	}
 ]

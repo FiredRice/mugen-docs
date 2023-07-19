@@ -1,4 +1,5 @@
 {
+    "title": "开关设置",
 	"output": "./option.txt",
 	"nativeBefore": "./nativeBefore.cns",
 	"nativeAfter": "./nativeAfter.cns",

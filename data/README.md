@@ -17,6 +17,8 @@ interface DocsItem {
 
 ```ts
 interface OptionsType {
+    // 界面中开关模块的标题
+    title: string;
     // 开关文件存储相对路径
     output: string;
     // 在 Statedef 声名与变量之间的原生代码文件相对路径
