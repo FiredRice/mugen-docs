@@ -26,19 +26,19 @@
 
 ## 快速开始
 
-#### 支持的平台
+### 支持的平台
 
 > -   Windows 10/11 AMD64/ARM64
 > -   MacOS 10.13+ AMD64
 > -   MacOS 11.0+ ARM64
 > -   Linux AMD64/ARM64
 
-#### 依赖
+### 依赖
 
 > -   Go 1.18+
 > -   NPM (Node 15+)
 
-#### 安装 Wails
+### 安装 Wails
 
 ```sh
 go install github.com/wailsapp/wails/v2/cmd/wails@latest
@@ -46,13 +46,13 @@ go install github.com/wailsapp/wails/v2/cmd/wails@latest
 
 更多详细信息请阅读 [Wails 文档](https://wails.io/zh-Hans/docs/introduction)
 
-#### 本地启动
+### 本地启动
 
 ```sh
 wails dev
 ```
 
-#### 编译
+### 编译
 
 ```sh
 wails build
