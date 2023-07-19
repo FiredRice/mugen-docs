@@ -1,0 +1,7 @@
+[Statedef 80000]
+type = U
+movetype = I
+physics = N
+velset = 0, 0
+ctrl = 0
+anim = 1000

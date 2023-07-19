@@ -1,0 +1,32 @@
+{
+	"output": "./option.txt",
+	"nativeBefore": "./nativeBefore.cns",
+	"nativeAfter": "./nativeAfter.cns",
+	"labelSpan": 6,
+	"wrapperSpan": 18,
+	"schema": [
+		{
+			"label": "变量1",
+			"var": 1,
+			"type": "boolean",
+			"enum": { "close": 0, "open": 1 },
+			"value": 0
+		},
+		{
+			"label": "变量2",
+			"var": 2,
+			"type": "int",
+			"value": 10,
+			"min": 5,
+			"max": 15
+		},
+		{
+			"label": "变量3",
+			"var": 3,
+			"type": "float",
+			"value": 1.2,
+			"min": 0,
+			"max": 10
+		}
+	]
+}

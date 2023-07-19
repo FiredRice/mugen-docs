@@ -1,0 +1,19 @@
+[State 80000, ]
+type = NotHitBy
+trigger1 = 0
+
+[State 80000, ]
+type = PlayerPush
+trigger1 = 1
+value = 0
+
+[State 80000, ]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+flag2 = invisible
+
+[State 80000, ]
+type = DestroySelf
+trigger1 = stateno != 80000
+ignorehitpause = 1
