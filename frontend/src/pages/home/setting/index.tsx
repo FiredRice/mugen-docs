@@ -8,7 +8,14 @@ import './style/index.less';
 const Setting = () => {
     const [form] = Form.useForm();
 
-    const { schema, labelSpan, wrapperSpan } = useMemo(() => optionService.getValue(), []);
+    const {
+        schema,
+        labelSpan,
+        wrapperSpan,
+        title,
+        okText,
+        message: tipText
+    } = useMemo(() => optionService.getValue(), []);
 
     const [loading, setLoading] = useSafeState<boolean>(false);
 
@@ -26,15 +33,15 @@ const Setting = () => {
         const ok = await optionService.save();
         setLoading(false);
         if (ok) {
-            message.success('保存成功');
+            message.success(tipText.success);
         } else {
-            message.error('保存失败');
+            message.error(tipText.error);
         }
     };
 
     return (
         <Card
-            title={optionService.getValue().title}
+            title={title}
             className='setting-card'
         >
             <Form
@@ -56,7 +63,7 @@ const Setting = () => {
                         htmlType='submit'
                         style={{ width: 140 }}
                     >
-                        保存
+                        {okText}
                     </Button>
                 </div>
             </Form>

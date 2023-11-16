@@ -19,6 +19,15 @@ interface DocsItem {
 interface OptionsType {
     // 界面中开关模块的标题
     title: string;
+    // 保存按钮文案
+    okText: string;
+    // 保存提示
+    message: {
+        // 成功提示
+        success: string;
+        // 失败提示
+        error: string;
+    };
     // 开关文件存储相对路径
     output: string;
     // 在 Statedef 声名与变量之间的原生代码文件相对路径

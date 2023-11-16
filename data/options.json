@@ -1,5 +1,10 @@
 {
-    "title": "开关设置",
+	"title": "开关设置",
+	"okText": "保存",
+	"message": {
+		"success": "保存成功",
+		"error": "保存失败"
+	},
 	"output": "./option.txt",
 	"nativeBefore": "./nativeBefore.cns",
 	"nativeAfter": "./nativeAfter.cns",

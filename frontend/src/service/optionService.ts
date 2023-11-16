@@ -38,6 +38,11 @@ export type OptionSchemaItem = OptionNumSchemaItem | OptionBoolSchemaItem;
 
 export interface OptionsType {
     title: string;
+    okText: string;
+    message: {
+        success: string;
+        error: string;
+    };
     output: string;
     nativeBefore?: string;
     nativeAfter?: string;

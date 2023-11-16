@@ -2,12 +2,13 @@ package main
 
 import (
 	"embed"
-	"mugen-docs/src/core"
-	"mugen-docs/src/dialog"
-	"mugen-docs/src/file"
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"
 	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
+	"github.com/wailsapp/wails/v2/pkg/options/windows"
+	"mugen-docs/src/core"
+	"mugen-docs/src/dialog"
+	"mugen-docs/src/file"
 )
 
 //go:embed all:frontend/dist
@@ -36,6 +37,9 @@ func main() {
 			app,
 			file.New(app.Context()),
 			dialog.New(app.Context()),
+		},
+		Windows: &windows.Options{
+			WebviewUserDataPath: "./data/cache",
 		},
 	})
 
