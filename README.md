@@ -55,7 +55,7 @@ wails dev
 ### 编译
 
 ```sh
-wails build
+wails build -clean -platform=windows -webview2=embed
 ```
 
 ## 文档
